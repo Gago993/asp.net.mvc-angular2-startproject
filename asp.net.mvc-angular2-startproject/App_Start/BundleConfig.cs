@@ -17,17 +17,14 @@ namespace asp.net.mvc_angular2_startproject
                 "~/Scripts/jquery.unobtrusive*",
                 "~/Scripts/jquery.validate*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
-                "~/Scripts/knockout-{version}.js",
-                "~/Scripts/knockout.validation.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                "~/Scripts/sammy-{version}.js",
-                "~/Scripts/app/common.js",
-                "~/Scripts/app/app.datamodel.js",
-                "~/Scripts/app/app.viewmodel.js",
-                "~/Scripts/app/home.viewmodel.js",
-                "~/Scripts/app/_run.js"));
+                "~/Scripts/node_modules/core-js/client/shim.min.js",
+                "~/Scripts/node_modules/zone.js/dist/zone.js",
+                "~/Scripts/node_modules/reflect-metadata/Reflect.js",
+                "~/Scripts/node_modules/systemjs/dist/system.src.js",
+                "~/Scripts/systemjs.config.js"
+                ));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
